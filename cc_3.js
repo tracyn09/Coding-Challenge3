@@ -48,4 +48,33 @@ console.log("Employee Name:", employee.name)
 console.log("Role:", employee.role)
 console.log("Performance Score:", employee.performancescore)
 console.log("Eligible for Promotion:", employee.promotionEligible)
-console.log("status:", employee.isActive);
+console.log("Status:", employee.isActive);
+
+//Task 4
+
+//Declare Feedback Array
+let feedback = [
+    {   CustomerName: "Samantha Johnson",
+        FeedbackText: "Good quality, definitely reccomend!",
+        Rating: 4 
+    },
+    {   CustomerName: "Matthew Perry",
+        FeedbackText: "Decent, but nothing special, overpriced.",
+        Rating: 3
+    },
+    {   CustomerName: "Harry Lewis",
+        FeedbackText: "Good product, terrible delivery.",
+        Rating: 2
+    }
+];
+
+//Adding New Feedback Object
+feedback.push({
+    CustomerName: "Clara Evans",
+    FeedbackText: "Great service, quick delivery, product works.",
+    Rating: 5
+}
+);
+
+//Updated Feedback Array
+console.log("Feedback List:", feedback);
