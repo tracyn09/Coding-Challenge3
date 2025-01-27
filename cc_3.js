@@ -78,3 +78,27 @@ feedback.push({
 
 //Updated Feedback Array
 console.log("Feedback List:", feedback);
+
+//Task 5
+
+// Declaring Object Inventory
+let inventory = {
+    itemName: "Toothpaste",
+    stockCount: 458,
+    price: 4.39,
+
+    
+//Adding a Method calculateTotalValue that Returns the Total Value (stockCount * price)
+    calculateTotalValue: function() {
+        return this.stockCount * this.price;
+    }
+};
+
+//Log Object Inventory and Total Value
+console.log("Inventory Details:")
+console.log("Item:", inventory.itemName)
+console.log("Stock Count:", inventory.stockCount)
+console.log("Price / Item:", inventory.price)
+
+let Totalvalue = inventory.calculateTotalValue() 
+console.log("Total Value:", Totalvalue);
